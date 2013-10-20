@@ -1,6 +1,7 @@
 Webapp.UsersRoute = Ember.Route.extend({
   model: function() {
-    return Webapp.User.find();
+    return this.get('store').find('user');
+    // return Webapp.User.find();
   }
 });
 
